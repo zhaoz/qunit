@@ -371,6 +371,9 @@ var config = {
 			GETParams.splice( i, 1 );
 			i--;
 			config.noglobals = true;
+		} else if ( GETParams[i].search('=') > -1 ) {
+			GETParams.splice( i, 1 );
+			i--;
 		}
 	}
 	
